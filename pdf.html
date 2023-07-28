@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário do Aluno</title>
+  <link rel="stylesheet" type=text/css href="estilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <script src="/caminho/para/jspdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</script>
+</div>
+
+</head>
+<body>
+    
+<div id="content">
+
+<header>
+    <h1 id="titulo">CHECKLIST AUTOAVALIAÇÃO E REFLEXÕES<br>A PARTIR DA REALIDADE</h1>
+</header>
+   
+  <br>
+    <p id="ident">Identificação</p>
+    <br>
+    
+        <div>
+            <label class="dados-alunos">Nome Completo:</label>
+            <input type="text" nome="nome" id="nome-completo" >
+        </div>
+    <br>
+        <div>
+            <label class="dados-alunos">RA:</label>
+            <input type="text" nome="nome" id="ra">
+        </div>
+    
+    <br>
+        <div>
+            <label class="dados-alunos">E-mail:</label>
+            <input type="text" nome="nome" id="email" >
+        </div>
+        
+    
+    <br>
+      <!--introdução do formulario-->
+<p class="subtitulo"> Parte 1 - Preencha o cheklist de autoavaliação</p>
+
+
+<div class="legendas">
+
+<h6><strong>Legenda</strong>:<br><br>
+<b>SIM:</b> estudou e compreendeu totalmente os conteúdos propostos<br><br>
+<b>NÃO:</b> não estudou ou não compreendeu os conteúdos propostos <br><br>
+<b>PARCIALMENTE:</b> estudou, porém, possui dúvidas sobre os conteúdos propostos
+</h6>
+</div>
+
+<!--<h6>SIM: estudou e compreendeu totalmente os conteúdos propostos</h6>
+<h6>NÃO: não estudou ou não compreendeu os conteúdos propostos</h6>
+<h6>PARCIALMENTE: estudou, porém, possui dúvidas sobre os conteúdos propostos</h6>
+</div>--->
+
+
+<!--tabela-->
+
+<!-- Começa aqui onde copiar-->
+<table border="2" class="tabela">
+            <tr>
+                <th class="menu">Compreensão de conteúdo</th>
+                <th class="menu" width="10%">Sim</th>
+                <th class="menu" width="10%">Não</th>
+                <th class="menu">Parcialmente</th>
+            </tr>
+            <br>
+            <tr>
+                <td class="compreendi"><p>Eu compreendi o cenário histórico e político da Educação Especial no Brasil?</td>
+                <td ><input type="radio" name="opcao1" value="Sim"></td>
+                <td><input type="radio" name="opcao1" value="Não"></td>
+                <td><input type="radio" name="opcao1" value="Parcialmente"></td>                       
+            </tr>
+            <tr>
+                <td class="compreendi"><p>Eu compreendi que a Educação Especial é uma <br>modalidade de ensino que perpassa todos os níveis, etapas e modalidades?</td>
+                <td ><input type="radio" name="opcao2" value="Sim"></td>
+                <td><input type="radio" name="opcao2" value="Não"></td>
+                <td><input type="radio" name="opcao2" value="Parcialmente"></td> 
+            </tr>        
+             <p>
+            <tr>
+                <td class="compreendi"><p>Eu compreendi que enquanto modalidade de ensino a Educação Especial realiza o Atendimento Educacional Especializado (AEE), disponibiliza os recursos e serviços e orienta quanto a sua utilização no processo de ensino e aprendizagem nas turmas comuns do ensino regular?
+                </td>
+                <td ><input type="radio" name="opcao3" value="Sim"></td>
+                <td><input type="radio" name="opcao3" value="Não"></td>
+                <td><input type="radio" name="opcao3" value="Parcialmente"></td> 
+            </tr>    
+            <p>
+            <tr>
+                <td class="compreendi"><p>Eu compreendi quem é o público-alvo da Educação Especial definido nas políticas públicas a partir de 2008?
+                </td>
+                <td ><input type="radio" name="opcao4" value="Sim"></td>
+                <td><input type="radio" name="opcao4" value="Não"></td>
+                <td><input type="radio" name="opcao4" value="Parcialmente"></td> 
+            </tr>    
+            <p>
+            <tr>
+                <td class="compreendi"><p>Eu compreendi o que é o AEE e o processo formativo do profissional que trabalha como especialista na Educação Especial para atuar no AEE?
+                </td>
+                <td ><input type="radio" name="opcao5" value="Sim"></td>
+                <td><input type="radio" name="opcao5" value="Não"></td>
+                <td><input type="radio" name="opcao5" value="Parcialmente"></td> 
+            </tr>    
+                     
+            <tr>
+                <td class="compreendi"><p>Eu compreendi o que é Sala de Recursos Multifuncionais?
+                </td>
+                <td ><input type="radio" name="opcao6" value="Sim"></td>
+                <td><input type="radio" name="opcao6" value="Não"></td>
+                <td><input type="radio" name="opcao6" value="Parcialmente"></td> 
+            </tr>    
+           
+            <tr>
+                <td class="compreendi"><p>Eu compreendi o papel da Educação Especial, as <br>possibilidades e os desafios para uma Educação <br>Inclusiva?
+                </td>
+                <td ><input type="radio" name="opcao7" value="Sim"></td>
+                <td><input type="radio" name="opcao7" value="Não"></td>
+                <td><input type="radio" name="opcao7" value="Parcialmente"></td> 
+            </tr>    
+                    
+            <tr>
+                <td class="compreendi"><p>Eu compreendi o que é Acessibilidade?
+                </td>
+                <td ><input type="radio" name="opcao8" value="Sim"></td>
+                <td><input type="radio" name="opcao8" value="Não"></td>
+                <td><input type="radio" name="opcao8" value="Parcialmente"></td> 
+            </tr> 
+            
+            <tr>
+                <td class="compreendi"><p>Eu compreendi quais são as barreiras de acessibilidade <br>que uma pessoa em situação de deficiência ou <br>necessidades específicas pode enfrentar?
+                </td>
+                <td ><input type="radio" name="opcao9" value="Sim"></td>
+                <td><input type="radio" name="opcao9" value="Não"></td>
+                <td><input type="radio" name="opcao9" value="Parcialmente"></td> 
+            </tr>    
+                   
+             
+            <tr>
+                <td class="compreendi"><p>Eu me dediquei como poderia e/ou deveria aos estudos <br> propostos na semana 1 e 2?
+                </td>
+                <td ><input type="radio" name="opcao10" value="Sim"></td>
+                <td><input type="radio" name="opcao10" value="Não"></td>
+                <td><input type="radio" name="opcao10" value="Parcialmente"></td> 
+            </tr>
+
+</table>
+
+<!-- ... (fim da tabela) ... -->
+
+
+<p class="subtitulo1">Parte 2 – A partir de suas experiências prévias reflita e responda<br> as questões norteadoras</p>
+
+
+<p id="subtitulo3">Com base no que estudamos nas semanas 1 – Contextualizando a Educação Especial na perspectiva inclusiva e semana 2 – Acessibilidade e Inclusão, desenvolva <br>uma reflexão a partir das seguintes questões norteadoras:</p>
+<br>
+<div>
+    <label class="perguntas">1-Você já trabalhou ou já teve algum contato com uma pessoa com deficiência? Se sim, conte como foi esta experiência. Caso não, por favor, siga para a próxima <br>questão.
+   <br><textarea class="textarea" row="10"  id="texto1" name="ja-trabalhou"></textarea>
+</label>
+</div>
+
+
+<div>
+    <label class="perguntas">2-A partir da configuração da Educação Especial no contexto educacional brasileiro como você analisa a proposta para uma educação inclusiva? 
+        <br> O que você considera como principais desafios e o que aponta como possibilidades dentro da realidade que vive e trabalha?
+    <br>
+        <br><textarea class="textarea" row="6"  id="texto1" name=""></textarea>
+ </label>
+</div>
+ 
+
+ <div>
+    <label class="perguntas">3-Em termos de acessibilidade, aponte quais são as barreiras que observa dentro do seu cotidiano: faça um exercício de imaginar dentro do que você faz 
+        <br>todos os dias quais seriam as principais barreiras que uma pessoa que possui deficiência auditiva, física, intelectual, visual ou múltiplas teriam. 
+        Você consegue <br>descrever algumas saídas de acessibilidade para isso? No seu trabalho o que você acha que poderia fazer para minimizar essas barreiras que você destacou? 
+    <br><textarea class="textarea" row="6" id="texto1" name=""></textarea>
+ </label>
+</div>
+ 
+
+
+ <div>
+    <label class="perguntas">4-Como você entende a Educação Especial e a acessibilidade? Qual é a responsabilidade da Educação Especial sobre a acessibilidade em contextos escolares <br>e acadêmicos? <br>
+     <textarea class="textarea" row="6" id="texto1" name=""></textarea>
+ </label>
+ </div>
+</form>
+<br>
+<p id="conclusao">Conclusão:
+    Parabéns por ter chegado até aqui! As semanas 1 e 2 são fundamentais para avançarmos os nossos estudos e compreender os aspectos mais <br>práticos para possibilitar acessibilidade e processos mais inclusivos. Por isso, nas próximas semanas iremos aprofundar nossos conhecimentos sobre a <br>Tecnologia Assistiva, uma importante área do conhecimento que auxilia na construção de estratégias, procedimentos e recursos para a autonomia e <br>acessibilidade da pessoa com deficiência no âmbito social e escolar. 
+    Até breve. Bons estudos!
+    </p>
+
+<div class="generate-pdf">
+<button id="generate-pdf" onclick="window.print()">Baixar autoavaliação</button>
+</div>
+
+</div>
+</body>
+</html>
